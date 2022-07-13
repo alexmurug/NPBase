@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-NPBase.WorkerService-BAA48D5C-99DE-4F25-919D-850FCE9B10BB</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NPBase.Modules.DataCollector\NPBase.Modules.DataCollector.csproj" />
+    <ProjectReference Include="..\NPBase.Modules.FTP\NPBase.Modules.FTP.csproj" />
+  </ItemGroup>
+</Project>
